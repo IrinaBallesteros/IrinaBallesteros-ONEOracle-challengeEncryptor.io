@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    padding-top: 20px;
+    margin-left: 20px;
+    width: 10%;
+}
+
+body{
+    background:  #d8dfe8;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background:  #d8dfe8;;
+}
+
+.text-area{
+    position: absolute;
+    width: 52%;
+    height: 55%;
+    left: 5%;
+    top: 5%;
+    border: none;
+    font-family: 'Inter';
+    border-radius: 32px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #d8dfe8;
+    text-transform: lowercase;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    display: block;
+    
+}
+
+.text-area::placeholder{
+    color:#0A3871; 
+    font-family: 'Inter';
+    line-height: 100%;
+}
+
+.text-area:focus, .text-area:active{
+    outline: none;
+    border: none;
+}
+
+.information{
+    color: rgb(63, 62, 62);
+    font-size: 16px;
+    margin-left: 5%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.information p{
+    margin-top: 35%;
+}
+
+.buttons {
+    display: flex;
+    margin-left: 25px;
+    margin-top: 36%;
+}
+
+.btn-encrypt{
+    background:#0a3871;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color:white;
+    cursor: pointer;
+    height: 60px;
+    margin-left: 50px;
+    width: 310px;
+    transition: 1s all;
+    line-height: 19px;
+    font-size: 28px;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+.btn-decrypt{
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 60px;
+    margin-left: 55px;
+    width: 310px;
+    transition: 1s all;
+    line-height: 19px;
+    font-size: 28px;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+.btn-encrypt:hover, .btn-decrypt:hover{
+    background: #7af7bc;
+    transform: scale(1.2);
+}
+
+.encrypted{
+    position: absolute;
+    justify-content: center;
+    position: absolute;
+    height: 90%;
+    width: 30%;
+    left: 63%;
+    top: 5%;
+    background: white;
+    border-radius: 32px;
+}
+
+.encrypted-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    padding: 1%;
+    width: 100%;
+    gap: 16px;
+    margin-left: 5%; 
+    border: none;
+    border-radius: 32px ;
+    top: 60%;
+    font-family: 'Inter'; 
+    text-align: center;
+    justify-content: center;
+}
+
+.encrypted-message h2{
+    font-display: flex;
+    width: 90%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 110%;
+    color:rgb(63, 62, 62);
+    font-weight: bold; 
+    justify-content: center;
+    margin-left: -8%;
+}
+
+.encrypted-message p{
+    font-display: flex;
+    width: 90%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 420;
+    line-height: 120%;
+    justify-content: center;
+    color:rgb(63, 62, 62);
+    margin-top: 5%;  
+    margin-left: -8%;   
+}
+
+.encrypted img{
+    position: absolute;
+    width: 60%;
+    height: 40%;
+    margin-left: 50px;
+    top: 10%;
+}
+
+.encrypted img:hover{
+    transform: scale(1.2);
+}
+
+.copy{
+    border: 1px solid #0a3871;
+    border-radius: 18px;
+    color:#0a3871;
+    cursor: pointer;
+    height: 40px;
+    margin-top: 55%;
+    width: 180px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: -8%;
+    position: absolute;
+}
+.copy:hover{
+    background: #7af7bc;
+    transform: scale(1.2);
+}
+
+.developed{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 40%;
+    padding-top: 10px;
+    font-style: italic;
+}
+
+.footer{  
+    color: #0a3871;
+}
+
+footer img{
+    width: 3%;
+    margin-left:5px;
+}
+
+/* Responsy design */
+@media (max-width: 57.5em) {
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    .encrypt{
+        width: 100%;
+    }
+    .text-area{
+        width: 80%;
+        height: 60%;
+        left:10%;
+        top: 5%;   
+    }
+    .information{
+        width: 80%;
+        left: 10%;
+        margin-top: 90%;
+    }
+    .information p{
+        font-size: 16px;
+    }
+    
+    .buttons{
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+    .btn-decrypt, .btn-encrypt{
+        width: 40%;
+        border-radius: 16px;
+    }
+    .btn-encrypt:hover, .btn-decrypt:hover{
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+    .encrypted{
+        width: 80%;
+        left: 10%;
+        height: 30%;
+        top: 90%;
+    }
+    .encrypted-message{
+        width: 100%;
+        top: 5%;
+        margin-left: -2%;
+    }
+    .encrypted img{
+        top: 0%;
+        display: none;
+    }
+    .copy{
+        width: 40%;
+        margin-left: 8%;
+    }
+    .developed{
+        margin-left: 16%;
+        margin-top: 45%;
+    }
+}
